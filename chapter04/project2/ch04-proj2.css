@@ -2,13 +2,45 @@
 * {
    box-sizing: border-box;
 }
-body, section, header, div, p, h1, h2, h3, ul, li {
+header, div,p, h1, h2, h3, ul, li {
    margin: 0;
    padding: 0;
 }
+section { 
+   margin: 12px;
+   padding: 0; 
+   width: 910px; 
+   box-shadow:3px 3px 3px grey, 3px 3px 3px grey inset; 
+}
+.price {
+   margin: 0;
+   padding: 0;
+   font-size: 36px;
+   font-weight: 600;
+}
+div div {display: flex; justify-content: space-evenly; margin-top: 32px;margin-bottom: 32px;border-radius: 10px;}
+div div a {background-color: #3A6BA5; padding: 20px; color: white;text-decoration: none;border-radius: 10px;}
+div div a:hover { background-color: #437CBF;color: white;text-decoration: none;border-radius: 10px;}
+div div a:link { background-color: #437CBF;color: white;text-decoration: none;border-radius: 10px;}
+div div a:visited { background-color: #437CBF;color: white;text-decoration: none; border-radius: 50%;border-radius: 10px;}
+div div a:active { background-color: #437CBF;color: white;text-decoration: none;border-radius: 10px;}
+.price span{
+   margin: 0;
+   padding: 0;
+   font-size: 18px;
+   font-weight: 300;
+}
+div ul {
+   list-style-type: none;
+}
 body {
    font-family: 'Open Sans', sans-serif;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   flex-direction: column;
    box-sizing: border-box;
+   padding: 40px;
    background-color: #e4e7eb;
    font-weight: 300;
 }
@@ -21,6 +53,79 @@ h1 {
    font-size: 42px;
    padding: 10px 0;
 }
-
+.free {
+   background-color: #5BB189;
+   color: black;
+}
+div h3 {
+   padding-top: 6px;
+   padding-bottom: 6px;
+   font-size: 24px;
+}
+div ul li span {
+   font-weight: 400;
+   color: black;
+}
+div ul li {
+   padding: 12px;
+   color: rgb(73, 73, 73);
+}
+.standard {
+   background-color: #4B0082;
+   color: white;
+}
+.professional { 
+   background-color: #EC632A;
+   color: black;
+}
+#confidence {
+   padding: 12px;
+   width: 910px;
+   background-color: #2F4F4F;
+}
+#confidence h2 {
+   color: white
+}
+#confidence p {
+   color: white;
+   font-size: 16px;
+}
+#confidence ul li {
+   color: white;
+   background-size: 24px;
+   padding-left: 32px;
+   margin: 8px;
+   background-repeat: no-repeat;
+   background-image: url("checkmark.svg");
+}
+#confidence ul li a{
+   color: cyan;
+}
+.featured{
+   background-color: #2F4F4F !important;
+}
+.featured p {
+   color: white !important;
+}
+.featured ul li span {
+   color: white;
+   font-weight: 400;
+}
+.featured ul li {
+   color: grey;
+}
 /* add styles here */
+.column {
+   display: inline-block;
+   width: 300px;
+   background-color: white;
+   text-align: center;
+   list-style-type: none;
+}
+div ul li:nth-child(2n){
+   background: rgba(47,59,64,0.35);
+}
+div p {
+   color: black;
+}
 
